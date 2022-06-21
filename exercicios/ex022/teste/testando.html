@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Pseudo-classes</title>
+    <style>
+
+        div{
+            background-color: cadetblue;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+
+        }
+        
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display : block;
+            color:rgb(34, 32, 28);
+            background-color: rgb(216, 16, 139);
+            
+        }
+
+        div:hover{
+            color: rgb(224, 232, 233);
+            
+        }
+
+        h1{
+            border: 2px solid black;
+            padding: 2px;
+            color: blanchedalmond;
+            background-color: black;
+            text-align: center;
+        }
+
+        h1:hover{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            color: rgba(255, 0, 0, 0.952);
+            background-color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Vamos testar algumas Pseudo-classes dinâmicas </h1>
+
+    <div>
+        Vamos aos testes...
+        <p>Vamos esconder esse parágrafo e fazelo aparecer</p>
+    </div>
+</body>
+</html>

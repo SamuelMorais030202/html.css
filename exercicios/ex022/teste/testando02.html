@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos tentar fazer um esqueleto de menu</title>
+    <style>
+       div {
+           background-color: rgb(99, 117, 117);
+           border: 2px solid black ;
+           height: 200px;
+           width: 200px;
+       }
+       
+       div > ul {
+           display: none;
+       }
+
+       div:hover > ul{
+           display: block;
+           color: blue;
+       }
+
+    </style>
+</head>
+<body>
+    <p>Vamos tentar fazer o esqueleto de um menu</p>
+
+    <div>
+       <ul type="circle">
+           <li>
+               primeiro
+               <ul>
+                   <li>sim</li>
+                   <li>não</li>
+                   <li>talvez</li>
+               </ul>
+           </li>
+           <li>segundo</li>
+           <li>terceiro</li>
+       </ul>
+    </div>
+</body>
+</html>

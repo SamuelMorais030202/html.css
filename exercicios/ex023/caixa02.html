@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping tags</title>
+    <style>
+        body{
+            background-color: rgb(58, 58, 56);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: rgb(240, 248, 248);
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        main{
+            background-color: rgb(236, 235, 232);
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.712);
+            border-radius: 20px;
+        }
+        footer{
+            background-color: black;
+            padding: 4px;
+            font-size: 13px;
+            text-align: center;
+            margin: 0px;
+            color: white;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 10px 30px;
+        }
+        article{
+            background-color: wheat;
+            padding: 1px;
+            margin: 1px;
+        }
+        article > aside {
+            background-color: rgb(197, 178, 141);
+        }
+        nav{
+            background-color: rgb(122, 115, 115);
+            padding: 3px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.719);
+            border-radius: 10px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        nav > a:hover{
+            font-style: italic;
+            text-decoration: underline;
+            color: blueviolet;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: blanchedalmond;
+            margin: 10px auto;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Notícias :</h2>
+            <article id="politica">
+                <h3>política :</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, consequuntur veniam velit optio eligendi sed enim voluptas beatae? Cum magnam sapiente mollitia corrupti amet excepturi quis velit placeat quibusdam fugit!</p>
+                <aside>
+                    <p>Artigo escrito por um autor desconhecido</p>
+                </aside>
+            </article>
+            <article id="esporte">
+                <h3>Esportes :</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis assumenda nemo laudantium fuga doloribus, dicta voluptate dolor suscipit deserunt soluta in inventore, ipsum doloremque quas neque harum error mollitia iure?</p>
+                <aside>
+                    <p>Autor desconhecido</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

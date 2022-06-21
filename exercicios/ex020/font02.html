@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes esternas baixadas</title>
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url('Fonts/loveMachotf') format('opentype'), url('Fonts/loveMachttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Aliqa';
+            src: url('Fonts/Aliqaotf') format('opentype'), url('Fonts/Aliqattf') format('truetype');
+        }
+        @font-face {
+            font-family:'LoveMatch';
+            src: url('Fonts/LoveMatchotf.otf') format('opentype'), url('LoveMatchttf.ttf') format('truetype');
+        }
+        @font-face {
+            font-family:'Berkahi' ;
+            src: url('Berkahi\ Blackletter.otf') format('opentype'),url('Berkahi\ Blackletter.ttf') format('truetype');
+        }
+
+            /*
+               tipos de format()
+                 -opentype (otf)
+                 -truetype (ttf)
+                 -embedded-opentype
+                 -truetype-aat
+                 -svg
+                    *(otf) e (ttf) são os tipos de arquívos 
+                    para as fontes externas; é importante resaltar
+                    que tem navegadores que possuem dificuldade de 
+                    rodar algum desses tipos.
+            */
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'LoveMatch', times, serif ;
+            font-weight: normal;
+        }
+        h2{
+            font-family: 'LoveMatch';
+            font-weight: normal;
+        }
+        h2{
+            font-family:'Berkahi';
+        }
+        p{
+            font-family: 'Berkahi', times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio inventore quasi iste! Odit nulla eligendi laudantium corporis velit, nihil consequuntur corrupti numquam maiores, perspiciatis, quo reiciendis placeat rem hic eum.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora commodi quam minima, qui, quasi sit quis exercitationem eius aperiam error placeat possimus in soluta quibusdam molestias provident. Eos, deleniti quasi.</p>
+    <h2>subtítulo 2</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam officia, sint ab, quasi in incidunt laboriosam minima vero delectus veniam hic quis iusto? Eos ab dolorem officia libero, distinctio repudiandae.</p>
+</body>
+</html>
