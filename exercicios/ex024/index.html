@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Caítulo 19 aula 02</title>
+    <style>
+
+        body{
+            background-image: url('imagens/wallpaper004.jpg');
+        }
+
+        .quadrado{
+            display: inline-block;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            margin: 5px;
+            background-color: gray;
+        }
+
+        #q1{
+            background-color: aqua;
+        }
+
+        #q1:hover{
+            background-image: url('imagens/pattern003.png');
+        }
+
+        #q2{
+            background-image: linear-gradient(to top, yellow, rgb(255, 0, 0));
+        }
+
+        #q2:hover{
+            background-image: url('imagens/pattern004.png');
+        }
+
+        #q3{
+            background-image: url('imagens/pattern001.png');
+        }
+
+        #q3:hover{
+            background-image: linear-gradient(to top, gray, black);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
 </body>
 </html>
