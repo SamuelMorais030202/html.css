@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamanho e comportamento de imagens</title>
+    <title>Tamanho e comportamento de imagens/ fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
@@ -13,10 +13,16 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            background-attachment: fixed;
+            
+            /*
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size preicisa ser declarado fora do shorthand
+            */
         }
         main{
             background-color: white;
-            width: 350px;
+            max-width: 400px;
             margin: auto;
             padding: 10px;
             border-radius: 10px;
