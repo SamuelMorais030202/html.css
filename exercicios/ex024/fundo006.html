@@ -58,6 +58,30 @@
 
             transform: translate(-50%, -50%);
         }
+
+        section#caixaPrincipal{
+            border: 2px solid black;
+            width: 600px;
+            height: 450px;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: relative;
+        }
+        article#caixaSecundaria{
+            border: 2px solid black;
+            width: 300px;
+            height:159px;
+            background-color: rgba(238, 130, 238, 0.589);
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
@@ -66,8 +90,17 @@
         <div id="dentro"></div>
     </div>
 
+    <br>
+
     <section id="principal">
         <article id="secundario"></article>
     </section>
+    
+    <br>
+
+    <section id="caixaPrincipal">
+        <article id="caixaSecundaria"></article>
+    </section>
+
 </body>
 </html>
